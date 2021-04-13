@@ -1,0 +1,941 @@
+<!--有人-->
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<head>
+<title>Space Rocket</title>
+<link rel="shortcut icon" href="../SpaceRocket/img/Space%20icons.ico">
+<link href="../SpaceRocket/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/nbw-parallax.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.inview.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+	
+	$('#head1').parallax("50%", 0.1);
+	$('#head2').parallax("50%", 0.1);
+	$('.bg').parallax("50%", 0.4);
+	$('#third').parallax("50%", 0.3);
+
+})
+    </script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="dist/skrollr.min.js"></script>
+<script type="text/javascript">
+skrollr.init();    
+</script>
+<!------------------------------------------------------------------------------>
+<!--width,幅　height,高さ　z-index, 　padding,上下左右のパディングをまとめて指定
+margin,マージン領域　background,背景　-->
+    <style>
+body{
+	margin: 0;
+	min-width: 980px;
+	padding: 0;
+    background: #fff;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+nav{
+    color:#000;
+    text-decoration:underline;      
+}
+nav:link{
+    color: #000;        
+}
+nav:visited{
+    color: #000;        
+}
+li {
+  display: inline;
+  padding: 0 5px;
+}
+.text{
+    font-weight: 100;
+    font-size: 28px;
+    color: #696969;
+}
+.dud{
+    color: #757575;
+}
+.story{
+    font-weight: 800;
+    
+    }
+.str2{
+    float: left;
+    margin: 0 0 0 3%;
+}
+.str4{
+    color: #fffafa;
+    float: left;
+    margin: 0 0 0 3%;
+}
+.str6{
+    color: #000;
+    float: left;
+    margin: 0 0 0 3%;
+}
+.str8{
+    color: #fff;
+    float: left;
+    margin: 0 0 0 3%;    
+}
+.str10{
+    color: #000;
+    text-align: center;
+}
+.str12{
+    float: left;
+    margin: 0 0 0 3%;        
+}
+.str14,.str16{
+    color: #000;
+    text-align: center;       
+}
+.str18{
+    color: #fff;
+    float: left;
+    margin: 0 0 0 3%;
+}
+.str22{
+    color: #000; 
+    text-align: center; 
+}
+.str24{
+    color: #fff; 
+    float: left;
+    margin: 0 0 0 3%;             
+}
+.str26{
+    color: #000; 
+    text-align: center;             
+}
+.str28{
+    color: #dc143c; 
+    text-align: center;             
+}
+.str30{
+    color: #000; 
+    text-align: center;       
+}
+.str32{
+    color: #000; 
+    text-align: center;             
+}
+.str34{
+    color: #9acd32; 
+    text-align: center;             
+}
+.str36{
+    color: #000; 
+    text-align: center;             
+}
+.str38{
+    color: #000; 
+    text-align: center;             
+}
+.str40{
+    text-align: center;             
+}
+.str42{
+    float: left;
+    margin: 0 0 0 3%;          
+}
+.str44{
+    float: left;
+    margin: 0 0 0 3%;         
+}
+.str46{
+    float: left;
+    margin: 0 0 0 3%;         
+}
+.str48{
+    float: left;
+    margin: 0 0 0 3%;          
+}
+.str50{
+    float: left;
+    margin: 0 0 0 3%;          
+}
+      
+#header{
+    text-align: center;        
+} 
+#head0{
+    background: #000;
+	color: #fff;
+    text-align: center;
+	height: 32px;
+    margin: 0 auto;
+	padding: 0;
+}
+#head1{
+	background:url(../SpaceRocket/img/sate2.png) 50% 0 no-repeat fixed;
+	color: #000;
+	height: 1150px;
+    margin: 0 auto;
+	padding: 0;
+}
+#head2{
+	background: url(../SpaceRocket/img/sky15.jpg) 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+#head3{
+    background: url(../SpaceRocket/img/satellite-1030779_1920.jpg) 50% 0 no-repeat fixed;
+    color: #000;
+	height: 650px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+#head4{
+    background: url(../SpaceRocket/img/hayabusa2_main.png) 50% 0 no-repeat fixed; 
+    color: #fff;
+    height: 400px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+#head5{
+    background: url(../SpaceRocket/img/ki.jpg) 50% 0 no-repeat fixed; 
+    color: #000;
+    height: 270px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+#head6{
+    background: url(../SpaceRocket/img/CP.png) 50% 0 no-repeat fixed; 
+    color: #9acd32;
+    height: 460px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+#head7{
+    background: url(../SpaceRocket/img/st.jpg) 50% 0 no-repeat fixed; 
+    color: #000;
+    height: 200px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+#head8{
+    background: url(../SpaceRocket/img/so.jpg) 50% 0 no-repeat fixed; 
+    color: #000;
+    height: 370px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+#head9{
+    background: url(../SpaceRocket/img/spaceX4.jpg) 50% 0 no-repeat fixed; 
+    color: #000;
+    height: 350px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+#head10{
+    background: #000;
+	color: #fff;
+    text-align: center;
+	height: 32px;
+     
+}
+#head11{
+    background: url(../SpaceRocket/img/sun-11582_1920.jpg) 50% 0 no-repeat fixed; 
+    color: #000;
+    height: 350px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}             
+#head12{
+    background: url(../SpaceRocket/img/sui-11.jpg) 50% 0 no-repeat fixed; 
+    color: #9acd32;
+    height: 350px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}          
+#head13{
+    background: url(../SpaceRocket/img/kinn-11.png) 50% 0 no-repeat fixed; 
+    color: #000;
+    height: 350px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}          
+#head14{
+    background: url(../SpaceRocket/img/earth-11.png) 50% 0 no-repeat fixed; 
+    color: #9acd32;
+    height: 350px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}       
+#head15{
+    background: url(../SpaceRocket/img/mars-11.jpg) 50% 0 no-repeat fixed; 
+    color: #000;
+    height: 350px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}        
+#head16{
+    background: url(../SpaceRocket/img/moku-11.jpg) 50% 0 no-repeat fixed; 
+    color: #000;
+    height: 350px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}        
+#head17{
+    background: url(../SpaceRocket/img/do-11.png) 50% 0 no-repeat fixed; 
+    color: #9acd32;
+    height: 350px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;        
+}
+#head18{
+    background: url(../SpaceRocket/img/ten-11.png) 50% 0 no-repeat fixed; 
+    color: #000;
+    height: 350px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;         
+            
+}
+#head19{
+    background: url(../SpaceRocket/img/kai-11.png) 50% 0 no-repeat fixed; 
+    color: #000;
+    height: 350px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;         
+            
+}
+#head20{
+    background: #000;
+	color: #fff;
+    text-align: center;
+	height: 35px;       
+}
+#head21{
+    background: url(../SpaceRocket/img/aaa-11.png) 50% 0 no-repeat fixed; 
+    color: #fff;
+    height: 390px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+#head22{
+    background: url(../SpaceRocket/img/aaa-11.png) 50% 0 no-repeat fixed; 
+    color: #fff;
+    height: 430px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;        
+}
+#head23{
+    background: url(../SpaceRocket/img/aaa-11.png) 50% 0 no-repeat fixed; 
+    color: #fff;
+    height: 390px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;        
+}
+#head24{
+    background: url(../SpaceRocket/img/aaa-11.png) 50% 0 no-repeat fixed; 
+    color: #fff;
+    height: 180px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;        
+}
+#head25{
+    background: url(../SpaceRocket/img/aaa-11.png) 50% 0 no-repeat fixed; 
+    color: #fff;
+    height: 390px;
+    margin: 0 auto;
+	overflow: hidden;
+	padding: 0;        
+}
+    </style>
+    </head>
+  <body>
+      <nav>
+<div id="header">
+    <h1>もっと仕組みを知る</h1></div>
+<div class="story">
+<li><a href="../SpaceRocket/start.html">
+<span style="color: #000;">　　　Home　　　</span></a></li>
+<li><a id="n1">　　　人工衛星の仕組み　　　</a></li>
+<li><a id="n2">　　　宇宙について知る　　　</a></li>
+<li><a id="n3">　　　今注目の情報　　　</a></li>
+</div></nav>
+      
+
+<div id="head0">
+    <div class="str">
+        <div class="str0">
+    <h2>人工衛星の開発プロセスや運用、仕組みや機能、種類</h2>
+<p>
+</p>
+</div>
+    </div>
+      </div>
+      <!-------------->
+<div id="head1">
+    <div class="str1">
+        <div class="str2">
+            <h2><br>人工衛星の<span style="color: #800080">種類</span></h2>
+<p><span style="font-weight: 550;">
+   <span style="font-size: 25px;">技術開発・試験衛星</span><br>
+    いろいろな人工衛星の新しい技術を開発するための試験衛星など、実際に打ち上げてその機能を確認します。<br><br>
+    
+    <span style="font-size: 25px;">科学衛星</span><br>
+    地球やその周辺、あるいは宇宙そのものの科学的探査を行うための人工衛星です<br>
+    地球の高層大気、磁場、バンアレン帯(放射能帯)、宇宙線、太陽風などの観測や、太陽系の惑星探査。<br>
+    さらに広く宇宙全般を対象に科学的探査を行っています。<br><br>
+    
+    <span style="font-size: 25px;">通信・放送衛星</span><br>
+    遠くはなれていて直接通信できない2か所を、電波の中継所としてつないでいる人工衛星で、通信・放送衛星と呼ばれています。<br><br>
+   
+    
+    <span style="font-size: 25px;">気象・地球観測衛星</span><br>
+    天気予報などの精度を向上させるため、地球上の気象現象を観測する衛星です。<br><br>
+    
+    <span style="font-size: 25px;">測位衛星</span><br>
+    位置を確認するための人工衛星です。<br>
+    地球の周回軌道上に複数の衛星を打ち上げて、それぞれの人工衛星からの電波を受信することで<br>
+    自分の位置を確定するナビゲーションシステムなどに利用されています。<br>
+    普段、私達が使っているナビは4機以上のGPS衛星から直接データを受け取っています。<br><br>
+    
+    <span style="font-size: 25px;">宇宙実験衛星</span><br>
+    宇宙環境の特徴のひとつである｢微小重力｣を利用して、さまざまな実験を行う人工衛星です。<br><br>
+    
+    <span style="font-size: 25px;">測地衛星</span><br>
+    世界地図の基本である｢世界測地系｣に基づく海図の原点維持のためや地図の原点維持のために使用されています。<br>
+    地上と衛星間の距離測定は、地上からレーザ光を発射し、衛星表面に貼り付けられたレーザ反射プリズムによる<br>
+    反射光を地上で捉えて距離を図ります。<br><br>
+    
+    <span style="font-size: 25px;">軍事偵察衛星</span><br>
+    軍事衛星は、偵察や通信、ミサイルやロケット発射の探知や防衛、また宇宙での敵側の<br>
+    軍事衛星の破壊実験、核実験の監視など、軍事や防衛などを目的に利用されている人工衛星です。<br><br><br>
+    
+    人工衛星の種類は他にもいろいろありますので是非調べて見てください。<br><br>
+    
+    2017年2月時点で人工衛星の数は7,600機を超えており、地上に回収されたものや<br>
+    高度が下がって落下したものを除いても、軌道上の衛星は約4,400機以上あります。<br>
+    </span>
+</p>
+        </div>
+    </div>
+      </div>
+      <!-------------->
+
+<div id="head2">
+    <div class="str3">
+        <div class="str4">
+    <h2>人工衛星は好きな時に打ち上げることができない</h2>
+<p><span style="font-weight: 600;">
+目標となる軌道へ、より確実かつ安全に投入するため、打ち上げは<br>
+何時何分～何時何分までなら可能というように、ある程度の幅をもつ場合が多いです<br>
+この時間帯のことを「ロンチウィンドウ」と呼びます<br>
+その他にも人工衛星はロケットから分離されたら、すぐに太陽電池パドル<br>
+を開いて電力を確保しないと、バッテリーが枯渇し、機能が停止する可能性があります<br>
+なので分離後は太陽光に照らされている場所でなければなりません<br>
+他にも地上局との通信条件など様々な制約条件があります<br>
+<br>
+例えば静止衛星の打ち上げタイミングは1～2時間程度の幅があります<br>
+極軌道衛星の打ち上げタイミングはわずか10分程度、最も打ち上げタイミングが<br>
+難しいのは、宇宙ステーションや月、惑星、小惑星など打ち上げる人工衛星の訪問先が<br>
+決まっている場合です。訪問先の軌道運動に合わせて打ち上げ時日を決めないと、相手とうまくランデブーできません  
+    </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head3">
+    <div class="str5">
+        <div class="str6">
+            <h2><br><br>人工衛星が<span style="color: #ffd700">金色</span>の部分とは</h2>
+<p><span style="font-weight: 600;">
+金色をしたものは、「サーマルブランケット」というもので、外部から人工衛星に入ってくる熱を遮断するものです<br>
+人工衛星の内部にはいろいろな機械が入っており、それらの機器からの発熱によって、内部の温度は上昇します<br>
+この温度上昇は、搭載している機器に悪影響や故障の原因となる恐れがありますので<br>
+ほとんどの衛星は内部にたまった熱を宇宙空間に放熱するなどの様々な工夫がしてあります<br>
+宇宙空間にある人工衛星は、直接太陽の光にさらされている部分の温度は100度以上にもなります<br>
+また、日陰の部分は逆にマイナス100度以下にもなるという過酷な条件にさらされているので衛星の内部に入ることを極力防ぐことが重要になります<br><br>
+
+｢サーマルブランケット｣は、太陽からの熱が衛星の内部に侵入することを防ぐ役割をします<br>
+｢サーマルブランケット｣の構造は、薄いフィルムとネット上のスペーサを多層に重ねたものになっています<br>
+多層に重ねて層と層の間に空間を作り、熱を伝わりにくくすることで断熱効果を高めています<br><br>
+
+層と層の間には地上では空気が入っていますので、もしサーマルブランケットを密閉したまま宇宙空間に行くと周囲の気圧が下がるので<br>
+膨らんで破裂してしまいます。そのため、断熱材の表面には小さな穴が複数空いており、そこから空気を逃すようになっています<br>
+空気が抜けても空間が残りますので、高い断熱性能を発揮することができるのです<br><br>
+    
+国際宇宙ステーションは高度350～400kmと低い位置を飛んでいるため、原子状酸素の濃度が高く、最外層がポリイミドだと溶けて徐々に蒸発するので<br>
+ベータクロスと呼ばれるガラス繊維素材を使って保護しています。<br>
+これが白く見えるのです。また、デブリ対策にもなります。
+    </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head4">
+    <div class="str7">
+        <div class="str8">
+    <h2>太陽電池パネルを離して取り付けられている人工衛星の訳は？</h2>
+<p><span style="font-weight: 600;">
+羽を広げたような太陽電池パネルを持っている衛星は自分で姿勢をコントロールしている衛星（三軸衛星）は<br>
+いつも太陽電池パネルを太陽の方向に向けて効率的な発電ができるように自分自身の姿勢を制御しています。<br>
+そのため太陽電池パネルを太陽の方向に向けやすくするために、羽のようなものについているのが第一の理由です。<br><br>
+    
+また、いつも太陽の方向を向けるように努力していても、どうしても人工衛星自身の影に太陽電池パネルが入ってしまうことがあります。<br>
+そうすると太陽電池パネルのその部分だけ発電しなくなってしまい効率的ではありませんし、重さも増加してしまいます。<br>
+また衛星に使われている太陽電池は高価ですから、もったいない話にもなってしまいます。<br>
+このようなことを避けるために羽やラケットのようなものを人工衛星に取り付け、その上に太陽電池を貼り、太陽電池を衛星本体から離しているのです。<br>
+これが二つ目の理由です。<br><br>
+    
+このように人工衛星はなるべく効率的に発電をするために多くの工夫をしているのです。<br>いろいろと工夫をすることでなるべく軽く、そしてなるべくお金がかからないように努力しているのです。<br>
+    </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head5">
+    <div class="str9">
+        <div class="str10">
+    <h2>人工衛星の素材とは</h2>
+<p><span style="font-weight: 600;">
+人工衛星の"素材"として代表的なのが1円玉でもおなじみのアルミニウム合金です<br>
+鉄より軽く、軽量化が求められている人工衛星にとって欠かせない存在で、機器の筐体、構体パネルなど、幅広く使用されています。<br>
+強度や剛性が必要とされる部分では、スチール系の素材、軽量で強度が高いことからチタン合金もよく利用される素材です。<br>
+また、金属どうしが接触していると電気が流れ、腐食する危険性があります。<br>
+「応力腐食割れ」と「異種金属接触腐食」と呼ばれる現象については、充分な対策がとられます。<br>
+材料の種類や熱処理によって応力腐食割れに対する耐性を評価したデータベースがありそのなかから適切な素材を選定して適用しています。
+    </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head6">
+    <div class="str11">
+        <div class="str12">
+    <h2>人工衛星に積まれているコンピュータの性能</h2>
+<p><span style="font-weight: 600;">
+人工衛星には、データ処理用、姿勢軌道制御用、センサー用、ミッション制御用など、複数のコンピュータが搭載されています。<br>
+人工衛星のコンピュータで最も重要なのは「信頼性」です。<br>
+地球大気によって守られている地球とは違い、宇宙では強い放射線に直接さらされることになります。<br>
+とくに静止衛星や探査機は、バンアレン帯と呼ばれる地球磁気圏の外側に出るため、放射線環境はさらに厳しくなります。<br>
+放射線は電子回路にさまざまな問題を引き起こします。CPU内部の回路に放射線があたると、そのエネルギーによってビットが反転し<br>
+データの数値やプログラムの命令が変わったりしてCPUは間違った計算結果を返すことになります。<br>
+場合によっては、過電流のせいで回路が壊れてしまうこともあります。<br>
+なので、放射線に耐えられる設計や製造手法が採用された宇宙用CPUが使われています。<br>
+リスクは避けたいので、多少古くて処理性能が遅くても宇宙で実績があり、信頼性のあるCPUを使いたいのです。<br>
+今でも、1980年代のパソコンで使用されていたCPUと同じような設計に基づいて作られたCPUが使われています。<br><br>
+
+とはいえ、新しい宇宙用CPUの開発も当然されています。<br>
+処理性能が向上すれば、人工衛星側でより高度で複雑な処理ができるようになるといるメリットがあります。<br>
+次の世代の宇宙用64ビットCPUとして、性能を大幅に向上させた「HR5000」をJAXAが開発しています。<br>
+NECでは、このCPUを搭載した小型計算機「SpaceCube2」を開発。小型衛星「ASNARO」にも採用されています。
+    </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head7">
+    <div class="str13">
+        <div class="str14">
+    <h2>地下にある資源を宇宙から発見する</h2>
+<p><span style="font-weight: 600;">
+金属鉱床のひとつに、熱水鉱床と呼ばれるものがあります。<br>
+探査用センサー「OPS(可視光から短波長赤外の７波長を観測)」「ASTER(可視光から熱赤外の14波長を観測)」を使用し<br>
+鉱物の種類によって吸収する光の波長が決まっているので、波長のパターンを見れば鉱物の種類を推定できます<br><br>
+    </span></p>
+</div>
+    </div>
+      </div>
+             <!-------------->
+<div id="head8">
+    <div class="str15">
+        <div class="str16">
+    <h2></h2>
+<p><span style="font-weight: 600;">
+<br>農林水産業にも人工衛星は大きな貢献をしています。<br>
+漁場の探査に、水温、海色、海面高度などのデータは有効です。<br>
+魚は種類ごとに好む水温が違うし、海色からはエサとなる植物プランクトンの分布が分かります。<br>
+また、水面が周囲よりも盛り上がっている海域は、深いをころの海水温度が高く、マグロの魚場形成が期待できます。<br><br>
+
+植物の葉に含まれる葉緑体は、可視光の赤色波長の光を吸収し、近赤外線を反射するという特性があります。<br>
+つまり緑の葉の面積が広ければ、赤色の反射率は低く、近赤外線の反射率は高くなります。<br>
+これらのデータから植物の量や活性度を推定できます。<br>
+米のタンパク含有量の推定も可能です。<br><br>
+    
+また、地震などの地殻変動も宇宙から調査できます。<br>
+    </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head9">
+    <div class="str17">
+        <div class="str18">
+    <h2><br>未病を発見する運用管制の技術者</h2>
+<p><span style="font-weight: 600;">
+「病気になってからでは遅い」というのが人工衛星開発者の発想です。<br>
+人工衛星の日々の健康状態を見るだけでなく、長期のデータの変化を見ながら<br>
+一見健康そうに見えても、このまま推移すると、何か月後には、どこそこの調子が悪くなる可能性があるといった<br>
+「未来予測」をして、そうした問題に至らないように、未然に処置を下す、というのが運用管制業務に携わっている人達の役目です。<br>
+24時間体制で、何の変哲もなさそうみ見えるデータのほんのわずかな変化も見逃さない...<br>
+そんな職人技を持った技術者が、運用管制の現場に沢山います。<br>
+    </span></p>            
+ 
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head10">
+    <div class="str19">
+        <div class="str20">
+    <h2>宇宙について知る</h2>
+
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head11">
+    <div class="str21">
+        <div class="str22">
+    <h2><br>太陽</h2>
+<p><span style="font-weight: 600;">
+銀河系の恒星の一つで人類が住む地球を含む太陽系の物理的中心であり<br>
+太陽系の全質量の99.86%を占め、太陽系の全天体に重力の影響を与えています。<br>
+太陽の半径は約70万キロメートルであり、地球の約109倍に相当します。<br><br>
+
+太陽で最近面白いと思ったのが、人工衛星や電子機器に影響を及ぼす太陽風は有害な存在ですが<br>
+実はより有害で危険な宇宙線が太陽系に侵入するのを妨害していたということです<br>
+             </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head12">
+    <div class="str23">
+        <div class="str24">
+    <h2>水星</h2>
+<p><span style="font-weight: 600;">
+太陽系の惑星の中では最も小さく、赤道面での直径4,879.4kmは、地球の38%に過ぎません<br>
+
+水星では現在ESAとJAXAの共同で、2つの周回探査機を水星周回軌道に送り込んで水星を観測する計画を実行しています。<br>
+ロケットは2018/10/20に打ち上げられました。<br>
+JAXAは、日本の得意分野である磁場・磁気圏の観測を主目的とする「みお」の開発と水星周回軌道における運用を担当し<br>
+ESAは打ち上げから惑星間空間の巡航、水星周回軌道への投入、MPOの開発と運用を担当します。<br>
+「みお」とMPOはアリアン5型ロケットで一緒に打ち上げられ、水星到着後に分離して、協力しながら約1年間の観測を行う予定です。<br>
+また、水星に到着するまで様々な困難を乗り越え、約7年かかります。<br>
+是非、調べて見てください。<br><br>
+
+私はフクロウモモンガを飼っていて<br>
+打ち上げと飼い始めた日が近かったのでこの水星磁気圏探査機「みお」から名前を取りました。
+            </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head13">
+    <div class="str25">
+        <div class="str26">
+    <h2><br>金星</h2>
+<p><span style="font-weight: 600;">
+金星には二酸化炭素（CO2）を主成分とし、わずかに窒素を含む大気が存在します<br>
+気圧は非常に高く、地表で約92気圧ある地表での気温は約730K（約460℃）に達します<br>
+地球から見ると、金星は明け方と夕方にのみ観測でき、太陽、月に次いで明るく見える星であることから<br>
+明け方に見えるものを「明けの明星」、夕方に見えるものを「宵の明星」といいます
+             </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head14">
+    <div class="str27">
+        <div class="str28">
+    <h2>地球</h2>
+<p><span style="font-weight: 600;">
+太陽系のなかで、現在のところ生物の存在が確認されているのは、地球のみです。<br>
+生物が生きていくためには、適度な温度、気体の酸素の存在、液体の水の存在が必要だと考えられています。<br>
+この生物が生きていくことができると考えられる領域を、ハビタブルゾーンといいます。<br>
+この太陽系の中で、太陽からの熱によって液体の水と気体の酸素が存在できる温度になるのは<br>
+金星の外側から火星の内側まで、つまり地球の領域だけなのです。<br>
+最近の研究により、太陽系のハビタブルゾーンは地球だけではないことがわかってきました。<br>
+そこは、木星の衛星エウロパです。<br>
+ただし、その熱は太陽によるものではなく、木星のまわりを回るときの潮汐力によってエウロパそのものが<br>
+変形するほどの力がかかり、そのときの摩擦によって熱が発生する、というものです。<br>
+今でも生命を世界各国が探しています。<br>
+             </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head15">
+    <div class="str29">
+        <div class="str30">
+    <h2><br>火星</h2>
+<p><span style="font-weight: 600;">
+硬い岩石の地表を持った惑星です。<br>
+火星が赤く見えるのは、その表面に地球のような水の海が無く、地表に酸化鉄（赤さび）が大量に含まれているためです。<br>
+直径は地球の半分ほどで、質量は地球の約 10分の1に過ぎないため、火星の地表での重力の強さは地球の40パーセントほどしかなく<br>
+火星の表面積は、地球の表面積の約4分の1です。<br><br>
+    
+火星にはオリンポス山という山があります。この山は現在確認されている太陽系で最大の大きさを誇り、標高は21,230mもあります(エベレストは8848m)<br>
+現在、火星でNASAが開発したキュリオシティやインサイトなどが活動中です。
+             </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head16">
+    <div class="str31">
+        <div class="str32">
+    <h2>木星</h2>
+<p><span style="font-weight: 600;">
+木星およびそれと同様のガスを主成分とする惑星をガス惑星と呼びます。<br>
+木星は太陽に次ぐ重力中心であるが、半径比は7パーセントに過ぎません。<br>
+木星の衛星の数は現在79個しか知られていません。その中には400個を超える火山がある「イオ」という衛星があったり<br>
+色々な面白い衛星があります。<br><br>
+
+あまり知られていませんが、木星がなければ今の地球は存在しません。<br>
+木星の大きさは地球の１１倍で質量は３００倍以上、体積にかんしては１３００倍以上なのに対して<br>
+約１０時間というとてつもないスピードで自転していることにより、強い遠心力がかかります。<br>
+そのため、重力がいくぶんか相殺されるものの赤道上での重力は、地球のおよそ２.３倍となっています。<br>
+そして、木星はその強い重力と巨大さで太陽系外などから飛来する彗星や小惑星を自身に引きつけて、地球へ衝突することを防いでくれているのです。<br>
+木星が存在するおかげで、地球の隕石衝突率が8000分の1まで少なくなっています。<br>
+             </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head17">
+    <div class="str33">
+        <div class="str34">
+    <h2>土星</h2>
+<p><span style="font-weight: 600;">
+巨大ガス惑星に属する土星の平均半径は地球の約9倍に当ります。<br>
+土星の環は土星の赤道上空6,630kmから120,700kmの間に広がるが、その厚さはわずか20m程度に過ぎません<br>
+93%はソリンが混ざる水の氷で成り、7%は非結晶の炭素で、リングの温度は-180℃前後です。<br>
+環は塵程度のものから10m長前後までの粒子で形づくられています。<br>
+このような環は他の巨大惑星にも存在するが、土星のものは規模が特に大きく視認されています<br><br>
+    
+土星はほとんどガスで出来ているので、平均密度は水よりも軽いので土星を水につけると沈むことなく浮かびます。
+             </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head18">
+    <div class="str35">
+        <div class="str36">
+    <h2><br>天王星</h2>
+<p><span style="font-weight: 600;">
+天王星は主にガスと多様な氷から成っている。大気には水素が約83%、ヘリウムが15%、メタンが2%含まれています。<br>
+内部は重い元素に富み、岩石と氷からなる核のほか、水やメタン、アンモニアが含まれる氷からなるマントルで構成されていると推測されています。<br><br>
+
+表面温度は約-197度で、土星と同じく環を持っています。
+            </span> </p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head19">
+    <div class="str37">
+        <div class="str38">
+    <h2><br>海王星</h2>
+<p><span style="font-weight: 600;">
+肉眼で観望することは出来ず、太陽系において唯一、経験的観測でなく数学的予測によって発見された惑星です。<br>
+フランスの天文学者は、天王星の軌道の予期せぬ変化から、天王星の軌道が未知の惑星の重力による摂動のために生じているという推論を導きました。<br><br>
+表面温度は約-201度とされています。
+
+かつては冥王星が第９惑星でしたが、この周辺には他にも似たような小天体が存在していることが数々発見されたことで<br>
+準惑星に格下げされたことで今のような8個の惑星になりました。  
+    </span></p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head20">
+    <div class="str39">
+        <div class="str40">
+    <h2>今注目の人工衛星や情報</h2>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head21">
+    <div class="str41">
+        <div class="str42">
+    <h2>国際宇宙ステーションISS</h2>
+<p>
+国際宇宙ステーション(iss)はアメリカ、ロシア、日本、カナダ及び欧州宇宙機関 (ESA)などが協力して運用している宇宙ステーションです<br>
+地球及び宇宙の観測、宇宙環境を利用した様々な研究や実験を行うための巨大な有人施設です<br>
+ISSには、宇宙飛行士が安全に、確実に仕事をするためのさまざまな機能や工夫が盛り込まれています。<br>
+宇宙飛行士が使用する主なスペースは、実験や研究を行うためのいわば仕事場となる「実験モジュール」と<br>
+生活の場となる「居住モジュール」など。モジュールの中は、宇宙服を着なくても生活ができるよう、地球の大気とほとんど同じ状態が保たれています。<br>
+その他に、電力を作り出す「太陽電池パドル」、船外での作業に活躍する「ロボットアーム」などがあります。<br>
+issにはここでは書ききれない魅力があるので是非、調べてあなたが想像している魅力を探してみてください<br><br>
+
+また、issは2024年まで運用を継続する方針を発表しています<br>
+運用が終了しても、月軌道プラットフォームゲートウェイという多国間で月周回軌道上に建設することが提案されている有人の宇宙ステーションが現在開発されています<br>
+
+あまり知られていない情報ですが、国際宇宙ステーションは地上から肉眼で観測することが可能です<br>
+是非、issの軌道情報を調べてみてください
+            </p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head22">
+    <div class="str43">
+        <div class="str44">
+    <h2>スターリンク衛星</h2>
+<p>
+スターリンクは、アメリカ合衆国の民間企業スペースX社が構築を進めている宇宙インターネット計画で、<br>
+地球を覆うように大量の衛星を地球低軌道に打ち上げ、全世界にインターネットをつなげることを目指しています<br>
+低コスト・高性能な衛星バスと地上の送受信機により、衛星インターネットアクセスサービスを提供することを目的とします<br>
+またスペースXは、衛星を軍用や、科学・探検などの用途に販売することも計画しています<br>
+一度に打ち上げるスターリンク衛星の数は60個もの衛星を打ち上げています<br>
+スターリンク衛星を乗せたファルコン9ロケットはスペースシャトル以降では、初めてとなる、機体を回収・再使用する衛星打ち上げロケットです<br>
+スペースXは、総数約12,000基の人工衛星を、2020年代中頃までに3階層に渡って展開することを計画しています<br><br>
+
+しかしスターリンク衛星は現在、光害問題を抱えています<br>
+12,000基からなる巨大通信衛星網が完成すると、低軌道の衛星は90分で地球を周回することもあり、常に約200基の衛星が上空に見えると予測されており<br>
+そうなると、衛星の金属部分や太陽電池パネルは光を反射しやすいこともあり、天文台による観測に衛星の光の筋が横切るなどの支障が出るとして、<br>
+日本の国立天文台や国際天文学連合などがスペースX社に対し、衛星の素材を変えたり、太陽電池パネルの角度の調節を求める事態となっています<br><br>
+    
+スターリンク衛星は最近2020/01/29にも打ち上げられています。
+            </p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head23">
+    <div class="str45">
+        <div class="str46">
+    <h2>はやぶさ２</h2>
+<p>
+「はやぶさ２」は、「はやぶさ」後継機として小惑星サンプルリターンを行うミッションです。<br>
+はやぶさは世界で初めて小惑星からその表面物質を持ち帰ることに成功しましたが、そのミッションには多くのトラブルがありました。<br>
+はやぶさ２では、はやぶさの経験を生かして、よりトラブルの少ない確実なミッションを目指します。<br><br>
+
+はやぶさ2は2014年12月3日に打ち上げられ、2015年12月3日の地球スイングバイを経て、2018年6月27日に小惑星リュウグウに到着しました。<br>
+そして、2019年末にリュウグウを出発し、2020年末に地球に帰還する予定です。<br><br>
+
+はやぶさ2は，リュウグウの上空約20km付近から狙いを定めてタッチダウンしました。<br>
+ただし，地球からリュウグウまでの距離は約3億4千万km。地上から機体を制御しようにも，地球からの通信用の電波が届くまでに片道19分もかかってしまいます。<br>
+単純に操縦しようとしても上手くいくわけありません。<br>
+はやぶさ2はそのような条件の中で，ギリギリまでの地上からのオペレーションと，その後の自律制御を駆使し，<br>
+半径3mという探査機の大きさとほぼ同じ領域に，見事狙い通りタッチダウンすることに成功しました<br><br>
+
+「はやぶさ2」の新たな挑戦により、太陽系天体への往復探査技術を確実なものにするとともに、<br>
+太陽系誕生や生命誕生の秘密にさらに近づくことができると期待しています。
+            </p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head24">
+    <div class="str47">
+        <div class="str48">
+    <h2>人工流れ星衛星</h2>
+<p>
+2019年1月18日に打ち上げられた人工流れ星は2020年の春に流れる予定です。<br>
+見える範囲は約200kmです。日本の企業なので、日本国内ではどこでも観測できると思います。<br>
+是非、調べて見て下さい。
+
+            </p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head25">
+    <div class="str49">
+        <div class="str50">
+    <h2>ボイジャー2号,ボイジャー1号</h2>
+<p>
+NASAが1977年8月20日に太陽系の外惑星系を探査するために打ち上げられた無人宇宙探査機である。ボイジャー計画の一環として、姉妹機であるボイジャー1号の16日前に打ち上げられました。<br>
+さらにその先の天王星と海王星の接近に成功した[4]。巨大氷惑星を訪れた唯一の探査機で、また木星・土星・天王星・海王星の「グランドツアー」を初めて実現した探査機となりました。<br><br>
+    
+ボイジャー1号は1977年9月5日に打ち上げられ、2019年現在も運用されています。同機は地球から最も遠い距離に到達した人工物です。<br><br>
+    
+また、ボイジャーにはゴールデンレコードが搭載されていて、地球の生命や文化の存在を伝える音や画像が収められています。<br>
+地球外知的生命体や未来の人類が見つけて解読してくれることを期待しています。
+            </p>
+</div>
+    </div>
+      </div>
+            <!-------------->
+<div id="head26">
+    <div class="str51">
+        <div class="str52">
+    <h2></h2>
+<p>
+
+            </p>
+</div>
+    </div>
+      </div>
+
+      
+      
+    <div class="container">
+  <div class="text"></div>
+</div>
+
+      <script>
+              $(function() {
+	$('#n1').click(function () {
+	$('body,html').animate({
+		scrollTop: 120
+	}, 500);
+	return false;
+			});
+});
+          
+                  $(function() {
+	$('#n2').click(function () {
+	$('body,html').animate({
+		scrollTop: 4410
+	}, 500);
+	return false;
+			});
+});
+                $(function() {
+	$('#n3').click(function () {
+	$('body,html').animate({
+		scrollTop: 7600
+	}, 500);
+	return false;
+			});
+});
+      </script>
+
+    </body>
+</html>

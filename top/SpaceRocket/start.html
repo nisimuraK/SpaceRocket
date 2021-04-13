@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<head>
+<title>Space Rocket</title>
+<link rel="shortcut icon" href="../SpaceRocket/img/Space%20icons.ico">
+<link href="../SpaceRocket/main.css" rel="stylesheet" type="text/css" />
+<link href="../SpaceRocket/dist/skrollr.min.js" rel="stylesheet" type="text/css" />
+<link href="../SpaceRocket/js/all.js">
+<!-------------------------------------------------------------------------------->
+<!--width,幅　height,高さ　z-index, 　padding,上下左右のパディングをまとめて指定
+margin,マージン領域　background,背景　font-weight,フォントの太さ-->
+    <style>
+html, body {
+    width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+    background: #000;
+}
+/*
+ul.topnav {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #1b2538;
+    position: fixed;
+    z-index: 200;
+}
+ul.topnav li {
+	float: left;
+}
+ul.topnav li a {
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+ul.topnav li a:hover {
+	background-color: #a9bce2;
+}
+
+@media screen and (max-width: 480px) {
+	ul.topnav li.right, ul.topnav li {
+		float: none;
+	}
+}
+      */  
+        
+#title{
+	margin-top:300px;
+	color:#fff;
+	font-size:50px;
+    font-family: Courier;
+    left: 41%;
+}
+#Note1{
+    margin-right: 100px;
+    color:#fff;
+    font-size: 18px;
+    font-family: Courier;
+    top: 95%;
+    left: 0%;
+}
+#select{
+    margin-top: 220px;
+    color: #fff;
+    font-size: 50px;
+    font-family: Courier;
+    left: 45%;
+}
+#UR1,#UR2{
+    margin-top: 470px;
+    color: #fff;
+    font-size: 20px;
+    font-family: Courier;
+}
+#UR1{
+    left:27%;        
+}
+#UR2{
+    right:27%;        
+}
+#contact{
+    margin-top:220px;
+	color:#fff;
+	font-size: 50px;
+    font-family: Courier;
+    left: 44%;
+}
+.sa1{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+}
+.sa2{
+     margin-top:220px;
+	color:#fff;
+	font-size: 50px;
+    font-family: Courier;
+}
+#co1,#co2,#co3{
+    color: #fff;
+    font-size: 20px;
+    left: 44%;
+}
+
+#topback0{
+    z-index: 100;        
+}
+
+    </style>
+    </head>
+<!-------------------------------------------------------------------------------->
+<body><!--
+<nav>
+    <ul class="topnav">
+	<li><a id="#hom">Home</a></li>
+	<li><a id="#sel">Select</a></li>
+	<li><a id="#con">Contact</a></li>
+    </ul></nav>-->
+    
+
+    <div id="topback0">
+<img src="../SpaceRocket/img/topbackground1.jpg" data-0="opacity:1;"
+     data-3600="opacity:0;"></div>
+
+<p id="title" data-0="opacity:1;" data-800="opacity:0;">Space Rocket</p>
+
+<p id="Note1" data-0="opacity:1;"data-4700="opacity:1;">※フルスクリーンでお楽しみ下さい</p>
+    
+<p id="select" data-900="opacity:0;" data-1000="opacity:1;" data-3300="opacity:1;"
+   data-3500="opacity:0;">Select</p>
+
+<a href="../SpaceRocket/Unmanned.html">
+<p id="UR1" data-1000="opacity:0;"data-1300="opacity:1;"data-3300="opacity:1;"data-3500="opacity:0;">
+    <span style="border-bottom: double 4px skyblue">　　無人ロケットを打ち上げる　　</span></p></a>
+
+<a href="../SpaceRocket/Manned.html">
+<p id="UR2" data-1000="opacity:0;"data-1300="opacity:1;"data-3300="opacity:1;"data-3500="opacity:0;">
+    <span style="border-bottom: double 4px skyblue">　　もっと仕組みなどを知る　　</span></p></a>
+
+<p id="contact" data-3500="opacity:0;" data-3600="opacity:1;">Contact</p>
+
+<p id="co1" data-3500="opacity:0;top:40%;" data-3600="opacity:1;">参考書　/　人工衛星の<span style="color: #ffff00;">"なぜ"</span>を科学する</p>
+    
+<p id="co2" data-3500="opacity:0;top:50%;" data-3600="opacity:1;">連絡先　/　b○○○○</p>
+    
+<p id="co3" data-3500="opacity:0;top:95%;left:62%;" data-3600="opacity:1;">画像提供 : イラスト屋 様　©JAXA 様　spacex 様　他フリー画像サイト 様</p>
+<!-------------------------------------------------------------------------------->
+
+<script type="text/javascript" src="dist/skrollr.min.js"></script>
+<script type="text/javascript">
+skrollr.init();
+</script>
+
+    <script type="text/javascript">
+    </script>
+      <script>
+          
+            $(function() {
+	$('#hom').click(function () {
+	$('body,html').animate({
+		scrollTop: 0
+	}, 500);
+	return false;
+			});
+});
+          
+            $(function() {
+	$('#sel').click(function () {
+	$('body,html').animate({
+		scrollTop: 3300
+	}, 500);
+	return false;
+			});
+});
+      
+            $(function() {
+	$('#con').click(function () {
+	$('body,html').animate({
+		scrollTop: 3600
+	}, 500);
+	return false;
+			});
+});
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

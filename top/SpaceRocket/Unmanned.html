@@ -1,0 +1,569 @@
+<!--無人-->
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<head>
+<title>Space Rocket</title>
+<link rel="shortcut icon" href="../SpaceRocket/img/Space%20icons.ico">
+<link href="../SpaceRocket/index.css" rel="stylesheet" type="text/css"  />
+<link href="../SpaceRocket/main.css" rel="stylesheet" type="text/css"  />
+<link href="../SpaceRocket/js/index.js">
+<!------------------------------------------------------------------------------>
+<!--width,幅　height,高さ　z-index, 　padding,上下左右のパディングをまとめて指定
+margin,マージン領域　background,背景　-->
+    <!--# ID  . class-->
+<style>
+html, body {
+    width: 100%;
+	height:100%;
+    padding:0;
+	margin:0;
+    background: linear-gradient(to bottom,#000 35%,#000080 40%,#00008b 50%, #0000ff 55%,#87ceeb 70%, #fff 100%);
+}
+    
+.nav1 {
+    height: 55px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: #696969;
+}
+.nav1 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+.nav1 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0.4em 0.8em;
+    padding: 0;
+}
+.nav1 a {
+    padding: 0 0.7em;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+.nav1 a:before {
+    position: absolute;
+    content: '';
+-webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+    left: 15%;
+    right: 15%;
+    top: 0;
+    bottom: 0;
+    border-left: 3px solid #27ae60;
+    border-right: 3px solid #27ae60;
+}
+.nav1 a:hover,
+.nav1 .current a {
+    color: #ffffff;
+}
+.nav1 a:hover:before,
+.nav1 .current a:before {
+    opacity: 1;
+    left: 0;
+    right: 0;
+}
+/* * * *
+    
+    * * * */
+#Note2{
+    top: 95%;
+    font-weight: 700;
+}
+#message1{
+	width:100%;
+	text-align:center;
+    font-size: 25px;
+    top: 20%;
+}
+#message2,#message3,#message4,#message5,#message6{
+    left: 60.5%;
+}
+#message7{
+    left: 42%;
+    font-size: 25px;
+    font-weight: 400;
+}
+#message9,#message10{
+    left: 75%;    
+}
+#message11{
+    left: 80.5%;    
+}
+#message12{
+    left: 80%;    
+}
+#message13{
+    left: 2%;    
+}
+#message14{
+    left: 19%;    
+}
+#message15{
+    left: 26%;    
+}
+#message16{
+    left: 4.2%;
+}
+#message17{
+    left: 2.6%;    
+}
+#message18{
+    left: 4%;    
+}
+#message19{
+    left: 54%;    
+}
+#message20{
+    left: 62%;    
+}
+#message23,#message24,#message25,#message26,#message27,#message28,#message29,#message30{
+    left: 1%; 
+}
+#message21,#message22,#message23,#message24,#message25,#message26,#message27,#message28,#message29,#message30,#message31,#message32,#message33,#message34,#message35,#message36,#message37,#message38,#message39,#message40,#message41,#message42,#message43,#message44{
+    color: #fff;
+}
+#message44{
+    font-size: 28px;    
+}
+#text1{
+    left: 3%;
+    font-weight: 800;
+    font-size: 17px;
+}
+#des0{
+    left: 10%;
+    font-weight: 800;
+}
+#des1,#des2,#des3,#des4,#des6,#des7,#des8{
+    left: 1.8%;
+}
+#des5{
+    left: 10%;
+    font-weight: 800;
+}
+#start0 > img{
+    width: 25%;
+    left: 37.5%;
+}   
+#start1 > img{
+    width: 25%;
+    left: 37.5%;
+}
+#start2 > img{
+    width: 25%;
+    left: 37.5%;
+}
+
+#start5 > img{
+    width: 25%;
+}
+#start6 > img{
+    width: 25%;    
+}
+#start8 > img{
+    left: 67%;
+    top: 50%;
+}
+#start9 > img{
+    top: 25%; 
+    left: 8%;
+}
+#start11 > img{
+    left: 17%;    
+}
+#start17{
+     z-index: 100;   
+}
+    
+p{
+    font-size: 115%;    
+}
+
+</style>
+    </head>
+<!-------------------------------------------------------------------------------->
+  <body><nav>
+<ul class="nav1">
+  <li><a href="../SpaceRocket/start.html">Home</a></li>
+  <li><a id="Back">Back to start</a></li>
+</ul></nav>
+
+<!--###################
+                        説明、message部
+                                        #######################-->
+<div id="Note2" data-58000="opacity:1;" data-55001="opacity:1;"data-55000="opacity:0;">
+    <p>※フルスクリーンでお楽しみ下さい</p></div>
+<div id="message1" data-58000="opacity:1;"data-54501="opacity:1;"data-54500="opacity:0;">
+    <p>↑にスクロールします</p></div>
+<!----------------------------->
+<div id="message2" data-58000="top:63%;"data-57000="top:63%;" data-56999="top:58%;"data-56000="top:58%;opacity:1;" data-55999="top:53%;opacity:0;">
+    <p>世界には様々なロケットの種類がありますが、今回は<br>日本のH-IIAロケットを打ち上げます</p></div>
+      
+<div id="message3" data-57000="opacity:0;" data-56999="opacity:1;top:63%;" data-56000="top:63%;" data-55999="top:58%;"data-55000="top:58%;opacity:1;"data-54999="top:53%;opacity:0;">
+<p> H-IIAロケットは「H-IIロケット」をベースに開発され打ち上げコストを<br>
+    2分の１以下に抑えるなど、世界的にも有数のコストパフォーマンスを誇っています。</p></div>
+
+<div id="message4" data-56000="top:63%;opacity:0;" data-55999="opacity:1;"data-55000="top:63%;" data-54999="top:58%;"data-54000="top:58%;opacity:1;"data-53999="top:53%;opacity:0;"><p>日本では・安全性・省エネ・便利性、これらを考慮した結果<br>鹿児島県に２つ(種子島、内之浦)射場があります</p></div>
+
+<div id="message5" data-55000="top:63%;opacity:0;"data-54999="opacity:1;"data-54000="top:63%;"data-53999="top:58%;"data-51001="opacity:1;top:58%;"data-51000="opacity:0;top:56%;">
+<p>赤道に近いほど地球の自転を有効に使え、<br>あらゆる角度に打ち出すことができるので打上げが有利になります</p></div>
+      
+<div id="message6" data-54000="opacity:0;" data-53999="opacity:1;top:63%;"data-51001="opacity:1;top:63%;"data-51000="opacity:0;top:61%;"><p>例えば、静止衛星が行きたい静止軌道は、赤道上空を周回する軌道なので<br>赤道付近から打ち上げられた場合、ロケット分離後は高度を変更するだけでいいのです</p></div>
+
+<div id="message7" data-51001="opacity:0;top:32%;" data-51000="opacity:1;top:30%;"data-49201="top:30%;" data-49200="top:28%;opacity:0;"><p>まもなく発射されます</p></div>    
+    
+<div id="message8" data-44001="opacity:0;top:-20%;"data-44000="opacity:1;top:30%;" data-40501="opacity:1;top:30%;" data-40500="opacity:0;top:100%;"><p>宇宙飛行を実現するには、ロケットを秒速7.9km（時速28,000km）まで加速する必要があります</p></div>
+
+<div id="message8.1" data-43501="opacity:0;top:-20%;" data-43500="opacity:1;top:33%;" data-40501="opacity:1;top:33%;" data-40500="opacity:0;top:100%;"><p>これを<span style="font-size: 25px; color: #191970;">「第一宇宙速度」</span>といいます。</p></div>
+      
+<div id="message8.2" data-42801="opacity:0;top:-20%;" data-42800="opacity:1;top:40%;" data-40501="opacity:1;top:40%;" data-40500="opacity:0;top:100%;"><p>この秒速7.9kmまでに物体を加速すれば、地球に再び落ちてくることなく人工衛星になります</p></div>
+
+<div id="message8.3" data-42501="opacity:0;top:-20%;" data-42500="opacity:1;top:47%;" data-40501="opacity:1;top:47%;" data-40500="opacity:0;top:100%;"><p>地球の引力を脱出して月や惑星に向かうには秒速11.2km（時速40,320km）もの速度が必要です</p></div>
+    
+<div id="message8.4" data-42001="opacity:0;top:-20%;" data-42000="opacity:1;top:50%;" data-40501="opacity:1;top:50%;" data-40500="opacity:0;top:100%;"><p>これを<span style="font-size: 25px; color: #191970;">「第2宇宙速度」「脱出速度」</span>と言います。</p></div>
+
+<div id="message9" data-45901="opacity:0;top:21%;"data-45900="opacity:1;top:19%;"data-45001="top:19%;"data-45000="top:16.6%;"data-43801="top:16.6%;opacity:1;"data-43800="top:14%;opacity:0;"><p>ドローンの最高高度は500m / 16,640ft(制限付き)<br>日本の法律では通常150m未満しか飛ばせません</p></div>
+
+<div id="message10" data-45001="opacity:0;top:22%;"data-45000="opacity:1;"data-43801="top:22%;opacity:1;"data-43800="top:20%;opacity:0;"><p>ロシアの猛者は10,200m / 33,465ftまで飛ばしました</p></div>
+
+<div id="message11" data-43001="opacity:0;top:50%;" data-43000="opacity:1;top:48%;"data-39001="opacity:1;top:48%"data-39000="opacity:0;top:46%;"><p>スカイツリーの高さ634m</p></div>
+      
+<div id="message12" data-39001="opacity:0;top:17%;" data-39000="opacity:1;top:15%;"data-38101="opacity:1;top:15%;"data-38100="opacity:0;top:13%;"><p>グライダー通常高度600m ~ 900m<br>最高記録はなんと26,000m / 85,301ft</p></div>
+      
+<div id="message13" data-39001="opacity:0;top:50%;" data-39000="opacity:1;top:52%;"data-38101="opacity:1;top:52%;"data-38100="opacity:0;top:54%"><p>気球(有人)600m ～ 1,000m</p></div>
+      
+<div id="message14" data-40401="opacity:0;top:29%;" data-40400="opacity:1;top:27%;" data-39101="opacity:1;top:27%;"data-39100="opacity:0;top:25%;"><p>ブルジュ・ハリファの高さ828m</p></div>
+      
+<div id="message15" data-38001="opacity:0;top:64%;" data-38000="opacity:1;top:62%;"data-33101="opacity:1;top:62%;"data-33100="opacity:0;top:64%;"><p>富士山の高さ3,776m</p></div>
+
+<div id="message16" data-37201="opacity:0;top:17%;"data-37200="opacity:1;top:15%;"data-36601="top:15%;"data-36600="top:13%;"data-36001="top:13%;"data-36000="top:8%"data-34501="opacity:1;top:8%;"data-34500="opacity:0;top:6%;"><p>ヘリコプター最高高度約4,600m / 14,000ft</p></div>
+      
+<div id="message17" data-36601="opacity:0;top:17%;"data-36600="opacity:1;top:15%;"data-36001="top:15%;"data-36000="top:10.5%;"data-34501="opacity:1;top:10.5%;"data-34500="opacity:0;top:8.5%;"><p>ヘリコプターは機内に大気圧の影響を受けるので</p></div>
+      
+<div id="message18" data-36001="opacity:0;top:15%;"data-36000="opacity:1;top:13%;"data-34501="opacity:1;top:13%;"data-34500="opacity:0;top:11%;"><p>人間の高度限界(一般的に約3,300m)以上飛行<br>すると低酸素症が発生する可能性があります</p></div>
+      
+<div id="message19" data-36501="opacity:0;top:11%;"data-36500="opacity:1;top:9%;"data-34501="opacity:1;top:9%;"data-34500="opacity:0;top:7%;"><p>飛行船最高高度約4,880m / 16,010ft</p></div>
+      
+<div id="message20" data-34301="opacity:0;top:36%;"data-34300="opacity:1;top:34%;"data-33101="opacity:1;top:34%;"data-33100="opacity:0;top:36%;"><p>エベレストの高さ8,848m</p></div>
+      
+<div id="message21" data-31901="opacity:0;top:28%;left:80%;"data-31900="opacity:1;left:76%;"data-31001="top:28%;"data-31000="top:22.7%;"data-30001="top:22.7%;opacity:1;"data-30000="top:20.7%;opacity:0;"><p>商業用飛行機最高高度<br>約10,000m ～　12,000m / 33,000ft～40,000ft</p></div>
+
+<div id="message22" data-31001="opacity:0;top:28%;left:76%;"data-31000="opacity:1;"data-30001="opacity:1;top:28%;"data-30000="opacity:0;top:26%;"><p>ガルフストリームG550などは<br>最高高度約15545ｍ / 51000ft</p></div>
+      
+<div id="message23" data-29501="opacity:0;top:25%;"data-29500="opacity:1;top:23%;"data-28601="top:23%;"data-28600="top:18%;"data-27701="top:18%;"data-27700="top:15%;"data-25801="opacity:1;left:1%;"data-25800="opacity:0;left:-50%;"><p>ホワイトナイトツー高度15,000m / 49,212ft</p></div>
+      
+<div id="message24" data-28601="opacity:0;top:20%;"data-28600="opacity:1;"data-27701="top:20%;"data-27700="top:18%;"data-25801="opacity:1;left:1%;"data-25800="opacity:0;left:100%;"><p>ホワイトナイトツー(画像両端のエンジンが2つ付いている機体)は二段階の有人弾道飛行発射システムの第一段階として開発されました</p></div>
+      
+<div id="message25" data-27701="opacity:0;top:21%;"data-27700="opacity:1;"data-25801="opacity:1;left:1%;"data-25800="opacity:0;left:-50%;"><p>スペースシップツー(画像真ん中)は人や器材を乗せて、宇宙へ行き約5分間無重力状態を体験出来る宇宙往還機です</p></div>
+      
+<div id="message26" data-26801="opacity:0;top:63.5%;"data-26800="opacity:1;top:65.5%;"data-25801="opacity:1;top:65.5%;"data-25800="opacity:0;top:100%;"><p>ホワイトナイトツーはスペースシップツーを約15,000m / 49,212ft　まで運びます<br>高度約15kmまで上昇すると、母艦のホワイトナイトツーから分離され、一瞬の間自由落下して<br>母機と安全な距離になると、ロケットを点火し勢いよく上昇します。<br>その後、スペースシップツー尾翼が回転しフェザリング形状に入り約110,000m / 360,892ft　まで飛び立ちます<br>帰還方法は約22km / 72,178ft に到達したらフェザリングから標準形状へ戻り、滑空して宇宙港へ帰還します<br>全飛行時間は約2時間で、行きに3.5G　帰りに6Gの加速度を90秒体験することになります</p></div>
+      
+<div id="message27" data-25801="opacity:0;top:44%;left:20%;"data-25800="opacity:1;top:46%;"data-22301="opacity:1;top:46%;"data-22300="opacity:0;top:48%;"><p>高高度気球、現在最高記録約53,000m / 173,884ft</p></div>
+      
+<div id="message28" data-25501="opacity:0;top:-10%;"data-25500="opacity:1;top:30%;left:55%;"data-22301="opacity:1;left:55%;"data-22300="opacity:0;left:0%;"><p>高高度気球はより高くへの到達を目的とした気球は薄膜でできたものが主であり<br>とてもきれいな白色をしています</p></div>
+      
+<div id="message29" data-24801="opacity:0;top:-10%;"data-24800="opacity:1;top:36%;left:55%;"data-22301="opacity:1;left:55%;"data-22300="opacity:0;left:100%;"><p>高高度気球に積んださまざまな計器装置によって磁場現象や大気流、宇宙線やオゾン層など多くの分野での科学的データの収集が可能で、細密な気象観測が可能です</p></div>
+
+<div id="message30" data-24001="opacity:0;top:-10%;"data-24000="opacity:1;top:42%;left:55%;"data-22301="opacity:1;left:55%;"data-22300="opacity:0;left:0%;"><p>また、高層大気の実験プラットフォームとして利用されるほか、高高度から実験装置を落下させることによって微小重力実験を行う試みもあり、微小重力環境での材料化学実験などが行われています。</p></div>
+      
+<div id="message31" data-23301="opacity:0;top:-10%;"data-23300="opacity:1;top:48%;left:55%;"data-22301="opacity:1;left:55%;"data-22300="opacity:0;left:100%;"><p>安価なため、研究室レベルの小規模な研究や複数回の調査が必要な研究など、予算が限られていても実施しやすいという利点があります。</p></div>
+      
+<div id="message32" data-21301="opacity:0;left:36%;"data-21300="opacity:1;"data-19801="opacity:1;"data-19800="opacity:0;"><p>一般的に高度100kmから上が<span style="font-size: 40px; color: #800080;">宇宙</span>と定義されています。</p></div>
+
+<div id="message33" data-19701="opacity:0;"data-19700="opacity:1;"data-18301="opacity:1;"data-18300="opacity:0;"><p>このアニメーションにはありませんが、ロケットは打ち上げ中に1段、2段と切り離されます。</p></div>
+      
+<div id="message34" data-18301="opacity:0;top:0%;left:5%;"data-18300="opacity:1;top:30%;"data-17001="opacity:1;top:30%;"data-17000="opacity:0;top:100%;"><p>先ほど紹介したスペースシップワンの現在最高高度は112,000m / 367,454ft</p></div>
+      
+<div id="message35" data-18301="opacity:0;top:0%;left:5%;"data-18300="opacity:1;top:33%;"data-17001="opacity:1;top:33%;"data-17000="opacity:0;top:100%;"><p>スペースシップツーは110,000m / 360,892ft</p></div>
+      
+<div id="message36" data-17501="opacity:0;top:0%;left:55%;"data-17500="opacity:1;top:30%;"data-16501="opacity:1;top:30%;"data-16500="opacity:0;top:100%;"><p>既に運用を終了していますがロシアの宇宙ステーション ミールは358,000m / 1,174,540ft<br>に滞在してました</p></div>
+      
+<div id="message37" data-16501="opacity:0;top:39%;left:5%;"data-16500="top:37%;opacity:1;"data-15001="opacity:1;top:37%;"data-15000="opacity:0;top:100%;"><p>国際宇宙ステーション408,000m / 1,338,582ft</p></div>
+      
+<div id="message38" data-12401="opacity:0;top:0%;left:5%;"data-12400="opacity:1;top:5%;"data-9801="opacity:1;top:5%;"data-9800="opacity:0;top:100%;"><p>目的の軌道に分離された人工衛星はまず、「太陽捕捉」と呼ばれる動作をします。</p></div>
+      
+<div id="message39" data-12001="opacity:0;top:0%;left:5%;"data-12000="opacity:1;top:8%;"data-9801="opacity:1;top:8%;"data-9800="opacity:0;top:100%;"><p>これは、宇宙空間のどこに太陽があるのかを見つけ出し、太陽の方向に太陽電池パドルを向け、エネルギーを確保するためです。</p></div>
+      
+<div id="message40" data-11601="opacity:0;top:0%;left:4.5%;"data-11600="opacity:1;top:11%;"data-9801="opacity:1;top:11%;"data-9800="opacity:0;top:100%;"><p>「太陽捕捉」が終わると、次は三軸捕捉という「姿勢を正す」動作を行います。</p></div>
+      
+<div id="message41" data-11201="opacity:0;top:0%;left:5%;"data-11200="opacity:1;top:14%;"data-9801="opacity:1;top:14%;"data-9800="opacity:0;top:100%;"><p>これが完全に終了して初めて、何も目印のない宇宙空間において、人工衛星自身がどこにいて、どの方角を向いているかを認識し</p></div>
+
+<div id="message42" data-10801="opacity:0;top:0%;left:5%;"data-10800="opacity:1;top:17%;"data-9801="opacity:1;top:17%;"data-9800="opacity:0;top:100%;"><p>地球、あるいは地上のアンテナなどがどの方向にあるか分かるのです。</p></div>
+      
+<div id="message43" data-9751="opacity:0;top:0%;left:5%;"data-9750="opacity:1;top:3%;"data-8001="opacity:1;top:3%;"data-8000="opacity:0;top:100%;"><p>すべてのミッションを完了した人工衛星は</p></div>
+<div id="message43" data-9301="opacity:0;top:0%;left:5%;"data-9300="opacity:1;top:6%;"data-8001="opacity:1;top:6%;"data-8000="opacity:0;top:100%;"><p>後任となる人工衛星のために、軌道を譲ります</p></div>
+<div id="message43" data-8901="opacity:0;top:0%;left:5%;"data-8900="opacity:1;top:9%;"data-8001="opacity:1;top:9%;"data-8000="opacity:0;top:100%;"><p>さらに軌道上の安全性、衝突防止のことを考え、残った燃料で軌道を変更し地球に落下させます</p></div>
+<div id="message44" data-3001="opacity:0;left:43%;top:25%;"data-3000="opacity:1;"><p>以上で終了します</p></div>
+<!--#####################
+                         左説明部
+                                #########################-->
+<div id="text1" data-58000="top:30%;"data-56651="top:30%;" data-56650="top:26%;"data-55651="top:26%;" data-55650="top:22%;"data-54651="top:22%;"data-54650="top:18%;"data-53651="top:18%;"data-53650="top:15%;"data-51501="opacity:1;"data-51001="opacity:1;top:15%;"data-51000="top:13%;opacity:0;"><p>「 H-IIAロケットとH-IIBロケットの違い 」</p></div>
+      
+<div id="des0" data-58000="top:36%;" data-56651="top:36%;" data-56650="top:32%;"data-55651="top:32%;" data-55650="top:29%;" data-54651="top:29%;"data-54650="top:26%;"data-53651="top:26%;"data-53650="top:23%;"data-51501="opacity:1;"data-51001="opacity:1;top:23%;"data-51000="top:21%;opacity:0;"><p>H-IIAロケット</p></div>
+      
+<div id="des1" data-56651="opacity:0;top:40%;" data-56650="opacity:1;top:37%;"
+data-55651="top:37%" data-55650="top:34%;"data-54651="top:34%;"data-54650="top:31%;"data-53651="top:31%;"data-53650="top:28%;"data-51501="opacity:1;"data-51001="opacity:1;top:28%;"data-51000="top:26%;opacity:0;"><p>H-IIAロケットは約17階建てのビル(53m)とほぼ同じ長さ</p></div>
+      
+<div id="des2" data-55651="opacity:0;" data-55650="opacity:1;top:37%;"data-54651="top:37%;"data-54650="top:34%;"data-53651="top:34%;"data-53650="top:31%;"data-51501="opacity:1;"data-51001="opacity:1;top:31%;"data-51000="top:29%;opacity:0;">
+<p>H-IIAの全備質量は約259 t（人工衛星の質量は含まず）</p></div>
+      
+<div id="des3" data-54651="opacity:0;" data-54650="opacity:1;top:37%;"data-53651="top:37%;"data-53650="top:34%;"data-51501="opacity:1;"data-51001="opacity:1;top:34%;"data-51000="top:32%;opacity:0;">
+<p>H-IIAの打ち上げ実績 31回のうち、30回成功　主に人工衛星を打ち上げてます</p></div>
+
+<div id="des4" data-53645="opacity:0;" data-53644="opacity:1;top:37%"data-51501="opacity:1;"data-51001="opacity:1;top:37%;"data-51000="top:35%;opacity:0;"><p>小惑星探査機「はやぶさ２」もH-IIAロケットで打ち上げられました。</p></div>
+<!----B---->
+<div id="des5" data-58000="top:56%;" data-56651="top:56%;" data-56650="top:53%;"data-55651="top:53%;" data-55650="top:50%;" data-54651="top:50%;"data-54650="top:47%;"data-53651="top:47%;"data-53650="top:44%;"data-51501="opacity:1;"data-51001="opacity:1;top:44%;"data-51000="top:41%;opacity:0;"><p>H-IIBロケット</p></div>
+      
+<div id="des6" data-56651="opacity:0;top:58%;" data-56650="opacity:1;top:58%;"
+data-55651="top:58%" data-55650="top:55%;"data-54651="top:55%;"data-54650="top:52%;"data-53651="top:52%;"data-53650="top:49%;"data-51501="opacity:1;"data-51001="opacity:1;top:49%;"data-51000="top:47%;opacity:0;"><p>H-IIBロケットは約19階建てのビル(56m)とほぼ同じ長さ</p></div>
+      
+<div id="des7" data-55651="opacity:0;" data-55650="opacity:1;top:58%;"data-54651="top:58%;"data-54650="top:55%;"data-53651="top:55%;"data-53650="top:52%;"data-51501="opacity:1;"data-51001="opacity:1;top:52%;"data-51000="top:50%;opacity:0;">
+<p>H-IIBの全備質量は約531 t（人工衛星の質量は含まず）</p></div>
+      
+<div id="des8" data-54651="opacity:0;" data-54650="opacity:1;top:58%;"data-53651="top:58%;"data-53650="top:55%;"data-51501="opacity:1;"data-51001="opacity:1;top:55%;"data-51000="top:53%;opacity:0;">
+<p>H-IIBの打ち上げ実績 8回のうち、8回成功　主に国際宇宙ステーション(iss)の<br>補給機「こうのとり」(HTV)を打ち上げてます</p></div>
+      
+<!--####################
+                        説明タグ部
+                                #########################-->
+
+      <div id="Description0"><!--世界には様々な-->
+<img src="../SpaceRocket/img/a3.png" data-58000="top:63%;right:24.5%;opacity:1;"data-51501="opacity:1;"data-51001="opacity:1;top:63%;"data-51000="opacity:0;top:60%;"></div>
+      
+      <div id="Description1"><!--ドローン-->
+<img src="../SpaceRocket/img/a3.png" data-45901="top:21%;opacity:0;left:69%;"data-45900="opacity:1;top:19%;"data-43801="top:19%;opacity:1;"data-43800="top:17%;opacity:0;"></div>
+      
+      <div id="Description2"><!--スカイツリー-->                                                         <!--------------グライダー-------------->
+<img src="../SpaceRocket/img/a3.png" data-43001="opacity:0;left:74%;top:48%;" data-43000="opacity:1;top:46%;"data-39001="top:46%;"data-39000="top:16%;"data-38101="top:16%;opacity:1;"data-38100="opacity:0;top:14%;"></div>
+    
+      <div id="Description3"><!--ブルジュ-->
+<img src="../SpaceRocket/img/a3.png" data-40401="opacity:0;left:13%;top:27%;"data-40400="opacity:1;top:25%;"data-39101="opacity:1;top:25%;"data-39100="opacity:0;top:23%;"></div>
+      
+      <div id="Description4"><!--気球-->
+<img src="../SpaceRocket/img/a4.png" data-39001="opacity:0;top:48%;"data-39000="opacity:1;top:50%;"data-38101="opacity:1;top:50%;"data-38100="opacity:0;top:52%;"></div>
+      
+      <div id="Description5"><!--富士山-->
+<img src="../SpaceRocket/img/a3.png" data-38001="opacity:0;left:20%;"data-38000="opacity:1;top:60%;"data-33101="opacity:1;top:60%;"data-33100="opacity:0;top:62%;">
+      </div>
+    
+      <div id="Description6"><!--ヘリコプター-->
+<img src="../SpaceRocket/img/a4.png" data-37201="opacity:0;top:15%;left:9%;"data-37200="opacity:1;top:13%;"data-34501="opacity:1;top:13%;"data-34500="opacity:0;top:11%;"></div>
+    
+      <div id="Description7"><!--飛行船-->
+<img src="../SpaceRocket/img/a4.png" data-36501="opacity:0;right:23%;"data-36500="opacity:1;top:6%;"data-34501="opacity:1;top:6%;"data-34500="opacity:0;top:4%;"></div>
+      <div id="Description8"><!--エベレスト-->
+<img src="../SpaceRocket/img/a4.png" data-34501="opacity:0;left:59%;top:34%;"data-34500="opacity:1;top:32%;"data-33101="opacity:1;"data-33100="opacity:0;"></div>
+    
+      <div id="Description9"><!--飛行機-->
+<img src="../SpaceRocket/img/a2.png" data-31901="opacity:0;top:28%;left:67%;"data-31900="opacity:1;top:28%;left:70%;"data-30001="opacity:1;top:28%;"data-30000="opacity:0;top:26%;"></div>
+    
+      <div id="Description10"><!--高高度気球-->
+<img src="../SpaceRocket/img/a2.png" data-25801="opacity:0;top:46%;left:13%;"data-25800="opacity:1;top:44%;"data-22301="opacity:1;top:44%;"data-22300="opacity:0;top:46%;">
+      </div>
+      
+      <div id="Description11"><!--iss-->
+<img src="../SpaceRocket/img/a1.png"data-16501="opacity:0;top:35%;left:12%;"data-16500="opacity:1;"data-15001="opacity:1;"data-15000="opacity:0;">
+      </div>
+
+<!--####################
+                        イラスト部
+                                #########################-->
+
+   	<div id="start1">
+<img src="../SpaceRocket/img/start1.png" data-58000="top:60%;opacity:1;"
+data-50001="top:60%;opacity:1;"data-50000="opacity:0;"></div>
+    
+        <div id="start2">
+<img src="../SpaceRocket/img/start2.png" data-58000="opacity:0;" data-50001="top:60%;opacity:0;"
+data-50000="top:60%;opacity:1;"data-48101="opacity:1;"data-48100="top:60%;opacity:0;"></div>
+    
+        <div id="start3">
+<img src="../SpaceRocket/img/biru.png" data-58000="top:77%;left:70%;"data-47000="top:77%;"data-46900="top:100%;"></div>
+    
+        <div id="start4">
+<img src="../SpaceRocket/img/wind-power.png" data-58000="top:77%;right:1%;"data-47000="top:77%;"data-46900="top:100%;"></div>
+    
+         <div src="start5">
+<img src="../SpaceRocket/img/Rocket.png" data-48100="opacity:0;top:57%;left:36.3%;"data-48000="opacity:1;top:57%;"data-46900="top:40%;"data-46800="top:25%;"data-14701="opacity:1;top:25%;"data-12700="opacity:0;top:100%;"></div>
+    
+        <div id="start6">
+<img src="../SpaceRocket/img/unnamed.png" data-58000="opacity:0;"data-51601="opacity:0;top:60%;left:37.5%;"data-50600="opacity:1;"data-46901="top:60%;opacity:1;"data-46900="top:90%;opacity:0;"></div>
+      
+      <div id="start7">
+<img src="../SpaceRocket/img/drone.png" data-45901="top:-20%;left:65%;"data-45900="top:30%;"data-43801="top:30%;"data-43800="top:100%;"></div>
+      
+      <div id="start8">
+<img src="../SpaceRocket/img/landmark_tower_skytree.png" data-43100="opacity:0;" data-43000="opacity:1;"data-39001="opacity:1;" data-39000="opacity:0;"></div>
+      
+      <div id="start9">
+<img src="../SpaceRocket/img/Burj.png" data-40401="opacity:0;" data-40400="opacity:1;"data-39101="opacity:1;top:25%;"data-39100="opacity:0;top:100%;"></div>
+      
+      <div id="start10">
+<img src="../SpaceRocket/img/Glider_clip_art_medium.png" data-39001="opacity:0;left:-20%;top:25%;" data-39000="opacity:1;left:60%;"data-38101="opacity:1;left:60%;"data-38100="opacity:0;left:120%;"></div>
+      
+      <div id="start11">
+<img src="../SpaceRocket/img/kikyuu.png" data-39001="opacity:0;top:-10%;" data-39000="opacity:1;top:49%;"data-38101="opacity:1;top:49%;"data-38100="opacity:0;top:100%;"></div>
+      
+      <div id="start12">
+<img src="../SpaceRocket/img/fujisan.png" data-38001="opacity:0;" data-38000="opacity:1;top:66%;"data-33101="opacity:1;top:66%;"data-33100="opacity:0;top:100%;"></div>
+      
+      <div id="start13">
+<img src="../SpaceRocket/img/helicopter.png" data-37201="opacity:0;top:25%;left:-20%;"data-37200="opacity:1;left:25%;"data-34501="opacity:1;left:25%;"data-34500="opacity:0;left:100%;"></div>
+      
+      <div id="start14">
+<img src="../SpaceRocket/img/hikousen.png" data-36501="opacity:0;right:-10%;"data-36500="opacity:1;right:5%;"data-34501="opacity:1;right:5%;"data-34500="opacity:0;right:100%;"></div>
+      
+      <div id="start15">
+<img src="../SpaceRocket/img/mount_everest.png" data-34301="opacity:0;right:-1%;top:42%;"data-34300="opacity:1;"data-33101="opacity:1;top:42%;"data-33100="opacity:0;top:100%;"></div>
+      
+      <div id="start16">
+<img src="../SpaceRocket/img/airplane.png"data-31901="opacity:0;top:35%;right:0%;"data-31900="opacity:1;top:43%;right:15%;"data-29501="opacity:1;top:43%;right:15%;"data-29500="opacity:0;top:63%;right:50%;"></div>
+      
+      <div id="start17">
+<img src="../SpaceRocket/img/Spacesip2.png"data-29501="opacity:0;top:28%;"data-29500="opacity:1;top:30%;"data-25801="opacity:1;"data-25800="opacity:0;"></div>
+      
+      <div id="start18">
+<img src="../SpaceRocket/img/tenki_kansoku_kikyuu.png"data-25801="opacity:0;top:-15%;"data-25800="opacity:1;top:45%;"data-22301="opacity:1;top:45%;"data-22300="opacity:0;top:100%;"></div>
+      
+      <div id="start19">
+<img src="../SpaceRocket/img/space_iss.png"data-16501="opacity:0;top:50%;left:20%;"data-16500="opacity:1;"data-15001="opacity:1;"data-15000="opacity:0;"></div>
+      
+      <div id="start20">
+<img src="../SpaceRocket/img/artificial-satellite.png"data-12501="opacity:0;top:100%;left:90%;"data-12500="opacity:1;top:40%;left:30%;"data-7801="opacity:1;top:40%;left:30%;"data-7000="opacity:0;top:80%;left:0%;"></div>
+      
+      <div id="start21">
+<img src="../SpaceRocket/img/space01_sun.png"data-6801="opacity:0;top:20%;left:-50%;"data-6800="opacity:1;left:-10%;"></div>
+      <div id="start21">
+<img src="../SpaceRocket/img/space02_mercury.png"data-6401="opacity:0;top:50%;left:-50%;"data-6400="opacity:1;left:12%;"></div>
+          <div id="start21">
+<img src="../SpaceRocket/img/space03_venus.png"data-6001="opacity:0;top:50%;left:-50%;"data-6000="opacity:1;left:19%;"></div>
+      <div id="start21">
+<img src="../SpaceRocket/img/space04_moon.png"data-5601="opacity:0;top:50%;left:-50%;"data-5600="opacity:1;left:29%;"></div>
+      <div id="start21">
+<img src="../SpaceRocket/img/chikyuu.png"data-5401="opacity:0;top:50%;left:-50%;"data-5400="opacity:1;left:34%;"></div>
+      <div id="start21">
+<img src="../SpaceRocket/img/space05_mars.png"data-5201="opacity:0;top:50%;left:-50%;"data-5200="opacity:1;left:45%;"></div>
+      <div id="start21">
+<img src="../SpaceRocket/img/space06_jupitor.png"data-4801="opacity:0;top:50%;left:-50%;"data-4800="opacity:1;left:56%;"></div>
+      <div id="start21">
+<img src="../SpaceRocket/img/space07_saturn.png"data-4401="opacity:0;top:50%;left:-50%;"data-4400="opacity:1;left:64%;"></div>
+      <div id="start21">
+<img src="../SpaceRocket/img/space07_uranus.png"data-4001="opacity:0;top:50%;left:-50%;"data-4000="opacity:1;left:84%;"></div>
+      <div id="start21">
+<img src="../SpaceRocket/img/space08_neptune.png"data-3601="opacity:0;top:50%;left:-50%;"data-3600="opacity:1;left:93%;"></div>
+      <div id="start21">
+<img src=""></div>
+      <div id="start21">
+<img src=""></div>
+<!--#####################
+                        ロケット煙
+                                ########################-->
+      <div id="smo0">
+<img src="../SpaceRocket/img/smoke_white8.png"data-48500="opacity:0;top:85%;left:20%;"data-48000="opacity:1;left:0%;"data-47000="top:85%;"data-46900="top:100%;"></div>
+      
+      <div id="smo0.1">
+<img src="../SpaceRocket/img/smoke_white9.png"data-48000="opacity:0;top:80%;left:40%;"data-47500="opacity:1;left:10%;"data-47000="top:80%;"data-46900="top:100%;"></div>
+      
+        <div id="smo0.2">
+<img src="../SpaceRocket/img/smoke_white9.png"data-51400="opacity:0;top:75%;left:40%;"data-49500="opacity:1;left:25%;"data-47000="top:75%;"data-46900="top:100%;"></div>
+      
+      <div id="smo1">
+<img src="../SpaceRocket/img/smoke_white5.png"data-51400="opacity:0;top:95%;left:40%;"data-49500="opacity:1;left:0%;"data-47000="top:95%;"data-46900="top:100%;"></div>
+      
+      <div id="smo2">
+<img src="../SpaceRocket/img/smoke_white9.png"data-51300="opacity:0;top:90%;left:40%;"data-49100="opacity:1;left:3%;"data-47000="top:90%;"data-46900="top:100%;"></div>  
+      
+      <div id="smo3">
+<img src="../SpaceRocket/img/smoke_white8.png"data-51400="opacity:0;top:89%;left:40%;"data-48900="opacity:1;left:10%;"data-47000="top:89%;"data-46900="top:100%;"></div>
+      
+      <div id="smo4">
+<img src="../SpaceRocket/img/smoke_white8.png"data-51000="opacity:0;top:89%;left:40%;"data-48500="opacity:1;left:17%;"data-47000="top:89%;"data-46900="top:100%;"></div>  
+      
+      <div id="smo5">
+<img src="../SpaceRocket/img/smoke_white9.png"data-48501="opacity:0;top:89%;left:40%;"data-48500="opacity:1;left:30%;"data-47000="top:89%;"data-46900="top:100%;"></div>
+      
+      <div id="smo6">
+<img src="../SpaceRocket/img/smoke_white2.png"data-50501="opacity:0;top:80%;left:40%;"data-49500="opacity:1;left:30%;top:77%;"data-47000="top:80%;"data-46900="top:100%;"></div>  
+      
+      <div id="smo7">
+<img src="../SpaceRocket/img/smoke_white5.png"data-50401="opacity:0;top:80%;left:25%;"data-49400="opacity:1;left:15%;top:75%;"data-47000="top:80%;"data-46900="top:100%;"></div>
+      
+      <div id="smo8">
+<img src="../SpaceRocket/img/smoke_white5.png"data-51400="opacity:0;top:84%;left:35%;"data-49500="opacity:1;left:25%;"data-47000="top:84%;"data-46900="top:100%;"></div>  
+      
+      <div id="smo9">
+<img src="../SpaceRocket/img/smoke_white2.png"data-50700="opacity:0;top:84%;left:35%;"data-49500="opacity:1;top:75%;"data-47000="top:75%;"data-46900="top:100%;"></div>
+      
+      <div id="smo10">
+<img src="../SpaceRocket/img/smoke_white2.png"data-49000="opacity:0;top:84%;left:33%;"data-48900="opacity:1;top:65%;"data-47000="top:60%;"data-46900="top:100%;"></div>  
+      
+      <div id="smo11">
+<img src="../SpaceRocket/img/smoke_white9.png"data-49000="opacity:0;top:95%;left:40%;"data-48500="opacity:1;left:8%;"data-47000="top:95%;"data-46900="top:100%;"></div>
+      
+      <div id="smo12">
+<img src="../SpaceRocket/img/smoke_white9.png"data-48500="opacity:0;top:96%;left:42%;"data-48400="opacity:1;left:20%;"data-47000="top:96%;"data-46900="top:100%;"></div>  
+      
+      <div id="smo13">
+<img src="../SpaceRocket/img/smoke_white8.png"data-48600="opacity:0;top:75%;left:10%;"data-48100="opacity:1;left:-10%;"data-47000="top:75%;"data-46900="top:100%;"></div>
+      
+      <div id="smo14">
+<img src="../SpaceRocket/img/smoke_white2.png"data-49100="opacity:0;top:71%;left:20%;"data-49000="opacity:1;top:60%;"data-47000="top:65%;"data-46900="top:100%;"></div>  
+      
+      <div id="smo15">
+<img src="../SpaceRocket/img/smoke_white2.png"data-51400="opacity:0;top:75%;left:40%;"data-49500="opacity:1;top:55%;"data-47000="top:55%;"data-46900="top:100%;"></div>
+      
+      <div id="smo16">
+<img src="../SpaceRocket/img/smoke_white2.png"data-50000="opacity:0;top:81%;left:41%;"data-49500="opacity:1;top:60%;top:58%";data-47000="top:60%;"data-46900="top:100%;"></div>  
+
+      <div id="smo17">
+<img src="../SpaceRocket/img/smoke_white2.png"data-49500="opacity:0;top:85%;left:39%;"data-49000="opacity:1;top:65%;"data-47000="top:65%;"data-46900="top:100%;"></div>
+      
+      <div id="smo18">
+<img src="../SpaceRocket/img/smoke_white2.png"data-51400="opacity:0;top:85%;left:42%;"data-49500="opacity:1;top:75%;"data-47000="top:75%;"data-46900="top:100%;"></div>  
+      
+      <div id="smo19">
+<img src="../SpaceRocket/img/smoke_white2.png"data-51400="opacity:0;top:85%;left:35%;"data-49500="opacity:1;top:70%;"data-47000="top:70%;"data-46900="top:100%;"></div>
+      
+<!--#####################
+                          js
+                             ########################-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="dist/skrollr.min.js"></script>
+<script type="text/javascript">
+skrollr.init();
+</script>
+
+<script type="text/javascript">
+/* * * *
+        読み込み時最下部に移動
+                        * * * */
+    window.onload=function(){
+        window.scroll(0,document.body.scrollHeight);
+    }
+/* * * * * * * * * * * * * * * */
+
+    $(function() {
+	$('#Back').click(function () {
+	$('body,html').animate({
+		scrollTop: 60000
+	}, 500);
+	return false;
+			});
+});
+    
+      </script>
+    </body>
+</html>
+
+
+                        
